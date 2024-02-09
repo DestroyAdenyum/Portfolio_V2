@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon } from '@heroicons/react/24/outline'
-import { NavLink } from 'react-router-dom'
 
 function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -59,25 +58,25 @@ function Header() {
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
                 <a
-                  href="#"
+                  href="#aboutme"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-protest text-white hover:bg-slate-700"
                 >
-                  Accueil
+                  A propos
                 </a>
                 <a
-                  href="#"
+                  href="#skills"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-protest text-white hover:bg-slate-700"
                 >
                   Skills
                 </a>
                 <a
-                  href="#"
+                  href="#projects"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-protest text-white hover:bg-slate-700"
                 >
                   Projets
                 </a>
                 <a
-                  href="#"
+                  href="#contact"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-protest text-white hover:bg-slate-700"
                 >
                   Contact
