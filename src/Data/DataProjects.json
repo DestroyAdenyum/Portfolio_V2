@@ -1,0 +1,80 @@
+[
+    {
+      "id": 0,
+      "title": "Ohmyfood",
+      "description": "Création d'un site en mobile-first innovant en améliorant son interface avec des animations CSS. Mon objectif est de rendre l'expérience utilisateur optimale en élaborant quatre menus délicieux avec des animations sophistiquées.",
+      "assignments": [
+        "Intégrer une maquette en mobile-first",
+        "Mettre en œuvre des animations CSS",
+        "Versionner son projet avec Git et Github"
+      ],
+      "skills": ["HTML5", "CSS3", "SASS", "GIT", "GITHUB"],
+      "github": "https://github.com/DestroyAdenyum/Projet_4-Ohmyfood.git",
+      "picture": "https://i.ibb.co/xz3p51j/ohmyfood.webp",
+      "site": "https://destroyadenyum.github.io/Projet_4-Ohmyfood/"
+    },
+    {
+      "id": 1,
+      "title": "Sophie Bluel",
+      "description": "Création du portfolio dynamique d'une architecte d'intérieur en utilisant JavaScript. A l'aide du Figma, du code back-end et du Kanban, j'ai pu façonner la page de présentation, la page de connexion et la modale pour intégrer de nouveaux médias",
+      "assignments": [
+        "Gérer les événements utilisateurs avec JavaScript",
+        "Manipuler les éléments du DOM avec JavaScript",
+        "Récupérer les données utilisateurs dans le JavaScript via des formulaires"
+      ],
+      "skills": ["HTML5", "CSS3", "JS"],
+      "github": "https://github.com/DestroyAdenyum/projet_6-portfolio_bluel.git",
+      "picture": "https://i.ibb.co/mCMDYWJ/sophie-bluel.webp"
+    },
+    {
+      "id": 2,
+      "title": "Kasa",
+      "description": "Refonte du site d'une agence de location d'appartements avec la technologie React et SASS. La mission, redonner vie à la plateforme vieillissante et façonner le nouveau visage de Kasa en migrant vers une stack JavaScript avec NodeJS et React.",
+      "assignments": [
+        "Mettre en œuvre des animations CSS",
+        "Développer une interface web avec Sass",
+        "Configurer la navigation entre les pages de l'application avec React Router",
+        "Développer des éléments de l'interface d'un site web grâce à des composants React",
+        "Initialiser une application avec Create React App"
+      ],
+      "skills": ["HTML5", "REACT", "SASS"],
+      "github": "https://github.com/DestroyAdenyum/projet_8-kasa.git",
+      "picture": "https://i.ibb.co/zHLptG4/Kasa.webp"
+    },
+    {
+      "id": 3,
+      "title": "Nina Carducci",
+      "description": "Optimisation le référencement d'un site d'une photographe. Grâce à l'utilisation de Schema.org, l'amélioration des métas des réseaux sociaux et la réinvention de l'accessibilité du site.",
+      "assignments": ["Optimiser la performance d'un site web"],
+      "skills": ["HTML5", "CSS3", "JS", "SEO"],
+      "github": "https://github.com/DestroyAdenyum/Projet_9-NinaCarducci.git",
+      "picture": "https://i.ibb.co/N79zKqZ/Nina-carducci.webp",
+      "site": "https://destroyadenyum.github.io/Projet_9-NinaCarducci/"
+    },
+    {
+      "id": 4,
+      "title": "724Events",
+      "description": " Relecture de code d'un ancien développeur et débuggage du site d'une agence d'événementiel. Utilisation de React Developer Tools, de tests unitaires et d'intégration.",
+      "assignments": [
+        "Débugger un site web grâce aux Chrome DevTools",
+        "Rédiger un cahier de recette pour tester un site"
+      ],
+      "skills": ["HTML5", "CSS3", "REACT", "JEST"],
+      "github": "https://github.com/DestroyAdenyum/Projet_10-724events.git",
+      "picture": "https://i.ibb.co/8m0Jzxd/724event.webp"    
+    },
+    {
+      "id": 5,
+      "title": "ArgentBank",
+      "description": "Implémentation du front-end d'une application bancaire avec React et Redux. Incluant la page d'accueil, la connexion, et le profil utilisateur, optimisant chaque aspect du code selon les bonnes pratiques du Green Code.",
+      "assignments": [
+        "Afficher les données du back end sur l'interface via des appels API",
+        "Configurer des routes API pour la communication client / serveur",
+        "Implémenter la gestion des données avec Redux pour assurer le fonctionnement du front"
+      ],
+      "skills": ["HTML5", "CSS3", "REACT", "REDUX"],
+      "github": "https://github.com/DestroyAdenyum/Projet_11-ArgentBank.git",
+      "picture": "https://i.ibb.co/R2bHVpr/Argentbank.webp"
+    }
+  ]
+  
