@@ -1,36 +1,42 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 
-import emailjs from '@emailjs/browser';
-import{ init } from '@emailjs/browser';
-init('REACT_APP_EMAILJS_USER_ID');
+import emailjs from "@emailjs/browser";
 
 function ContactForm() {
-
+    const formRef = useRef();
     const [ formData, setFormData ] = useState({
-        email: '', 
         firstName: '', 
         lastName: '', 
-        subject: '', 
+        email: '', 
+        phone: '', 
         message: ''
       });
 
-    const handleChange = (e) => setFormData({...formData, [e.target.id]: e.target.value});
+    const handleChange = (e) => {
+        const { target } = e;
+        const { name, value } = target
+
+        setFormData({
+            ...formData,
+            [name]: value,
+        });
+    };
 
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.send(
+        emailjs.sendForm(
           process.env.REACT_APP_EMAILJS_SERVICE_ID,
           process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-          formData,
+          e.target,
           process.env.REACT_APP_EMAILJS_USER_ID
         )
         .then((result) => {
           setFormData({
-            email: '', 
             firstName: '', 
             lastName: '', 
-            subject: '', 
+            email: '',
+            phone: '', 
             message: ''
           });
           console.log(result.text);
@@ -39,12 +45,8 @@ function ContactForm() {
         });
       };
 
-    console.log(process.env.REACT_APP_EMAILJS_SERVICE_ID);
-    console.log(process.env.REACT_APP_EMAILJS_TEMPLATE_ID);
-    console.log(process.env.REACT_APP_EMAILJS_USER_ID);
-
     return (
-        <form className="w-full max-w-lg" onSubmit={sendEmail}>
+        <form className="w-full max-w-lg" onSubmit={sendEmail} ref={formRef}>
             <div className="flex flex-wrap -mx-3 mb-6">
                 <div className="w-full px-3">
                     <label 
@@ -109,6 +111,25 @@ function ContactForm() {
                 <div className="w-full px-3">
                     <label 
                         className="block uppercase tracking-wide text-white text-xs font-bold mb-2" 
+                        htmlFor="phone"
+                    >
+                        Téléphone
+                    </label>
+                    <input 
+                        className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" 
+                        id="phone" 
+                        type="phone"
+                        name="phone"
+                        placeholder="01 23 45 67 89"
+                        value={formData.phone}
+                        onChange={handleChange}
+                    />
+                </div>
+            </div>
+            <div className="flex flex-wrap -mx-3 mb-6">
+                <div className="w-full px-3">
+                    <label 
+                        className="block uppercase tracking-wide text-white text-xs font-bold mb-2" 
                         htmlFor="message"
                     >
                         Message
@@ -116,6 +137,7 @@ function ContactForm() {
                     <textarea 
                         className=" no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none" 
                         id="message"
+                        name="message"
                         placeholder="Votre message ici!"
                         required
                         value={formData.message}
@@ -128,7 +150,6 @@ function ContactForm() {
                     <button 
                         className="shadow bg-slate-800 hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" 
                         type="submit"
-                        onClick={e => sendEmail(e)}
                     >
                         Envoyer
                     </button>
