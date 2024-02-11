@@ -19,11 +19,9 @@ function ProjectComponent({
       }
 
     return (
-        <article className="bg-white text-center flex flex-col gap-4 pb-4 rounded-xl shadow-lg">
-            <div className="w-full">
-                <img className="w-full h-64 object-cover" src={picture} alt={title}></img>
-            </div>
-            <div className="h-auto flex flex-col gap-4 pl-4 pr-4">
+        <article className="overflow-hidden bg-gray-200 text-center flex flex-col rounded-xl shadow-lg border-2">
+            <img className="w-full h-64 object-cover" src={picture} alt={title}></img>
+            <div className="min-h-full flex flex-col gap-4 h-full py-4 px-4 border-t-2">
                 <div className="flex flex-col gap-4 pl-4 pr-4">
                     <h4 className="text-slate-800 font-protest text-2xl">{title}</h4>
                     <div className="text-slate-800 font-handlee">{description}</div>
@@ -36,13 +34,14 @@ function ProjectComponent({
                     </ul>
                 </div>
                 <div>
-                    <ul className="w-auto flex flex-row justify-center items-center gap-6 pl-4 pr-4">
-                        {skills.map((skill, index) => (
-                            <li key={index} className="bg-slate-800 text-white py-1.5 px-2 rounded-xl">
-                                {skill}
-                            </li>
-                        ))}
-                    </ul>
+                    {skills.map((skill, index) => (
+                        <span 
+                            className="inline-block bg-slate-800 rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2"
+                            key={index}
+                        >
+                            {skill}
+                        </span>
+                    ))}
                 </div>
                 <div className="flex flex-row justify-center items-center gap-6">
                     <button className="text-slate-800 font-handlee" onClick={openGithubLink}>
