@@ -16,7 +16,7 @@ function Projects() {
     return (
         <section id="projects" className="flex flex-col items-center gap-7 mt-5 pb-5">
             <h3 className="text-2xl font-protest text-white text-center my-7">Projets</h3>
-            <div className="w-fit h-auto grid grid-cols-2 gap-12 place-content-center pl-20 pr-20">
+            <div className="w-fit h-auto grid grid-cols-2 tablet:grid-cols-1 phone:grid-cols-1 gap-12 place-content-center pl-20 pr-20">
                 {reversedProjects.slice(0, visibleProjects).map((data, id) => (
                     <ProjectComponent 
                         key={id}

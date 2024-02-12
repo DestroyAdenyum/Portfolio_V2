@@ -7,10 +7,6 @@ module.exports = {
       'protest': 'Protest Riot, sans-serif',
     },
     extend: {
-      animation: {
-        typewriter: 'typewriter 2s steps(11) forwards',
-        caret: 'typewriter 2s steps(11) forwards, blink 1s steps(11) infinite 2s',
-      },
       
       keyframes: {
         typewriter: {
@@ -38,11 +34,10 @@ module.exports = {
       },
 
       screens: {
-        // sm: '480px',
-        // md: '768px',
-        // lg: '976px',
-        // xl: '1440px',
-        // xxl: '1536px',
+        'phone': {'min': '320px', 'max': '767px'},
+        'tablet': {'min': '768px', 'max': '1023px'},
+        'desktop': {'min': '1024px', 'max': '1279px'},
+        'desktop-lg': {'min': '1280px', 'max': '1440px'},
       },
     },
   },

@@ -3,7 +3,11 @@ import { Dialog } from '@headlessui/react'
 import { Bars3Icon } from '@heroicons/react/24/outline'
 
 function Header() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const closeMobileMenu = () => {
+    setMobileMenuOpen(false)
+  }
 
   return (
     <header className="bg-slate-800 shadow-xl" id="accueil">
@@ -60,24 +64,28 @@ function Header() {
                 <a
                   href="#aboutme"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-protest text-white hover:bg-slate-700"
+                  onClick={closeMobileMenu}
                 >
                   A propos
                 </a>
                 <a
                   href="#skills"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-protest text-white hover:bg-slate-700"
+                  onClick={closeMobileMenu}
                 >
                   Skills
                 </a>
                 <a
                   href="#projects"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-protest text-white hover:bg-slate-700"
+                  onClick={closeMobileMenu}
                 >
                   Projets
                 </a>
                 <a
                   href="#contact"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-protest text-white hover:bg-slate-700"
+                  onClick={closeMobileMenu}
                 >
                   Contact
                 </a>
