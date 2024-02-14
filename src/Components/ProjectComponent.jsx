@@ -21,7 +21,7 @@ function ProjectComponent({
     return (
         <article className="overflow-hidden bg-gray-200 text-center flex flex-col rounded-xl shadow-lg border-2 border-slate-900">
             <div className="w-full h-64">
-                <img className="w-full h-64 object-cover" src={picture} alt={title}></img>
+                <img className="w-full h-64 object-cover" src={picture} alt={title} />
             </div>
             <div className="flex flex-col gap-4 h-full py-4 px-4 border-t-2">
                 <div className="flex flex-col gap-4 pl-4 pr-4">

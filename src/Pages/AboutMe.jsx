@@ -1,6 +1,6 @@
 import React from "react";
 
-import Photo from "../Assets/Photo/01nb_paper.png";
+import Photo from "../Assets/Photo/01nb_paper.webp";
 
 function AboutMe() {
     return (
@@ -8,7 +8,7 @@ function AboutMe() {
             <h1 className="text-3xl text-center font-protest text-white">Marie-Charlotte LEVITRE</h1>
             <h2 className="text-2xl text-center font-handlee text-white">Développeuse front-end intégratrice React</h2>
             <div className="h-fit">
-                <img src={ Photo } alt="Marie-Charlotte" className="object-cover" />
+                <img src={ Photo } alt="Marie-Charlotte" className="w-full h-full object-cover" />
             </div>
             <div className="w-3/5 pb-10 tablet:w-full tablet:px-5 phone:w-full">
                 <p className="text-center font-handlee text-white text-xl">Diplômée en décembre 2023 en développement intégration web, passionnée d'informatique et en quête d’apprentissage. J'aime travailler sur des projets innovants et passionnants qui me permettent de mettre en pratique mes connaissances et en apprendre de nouvelles.</p>

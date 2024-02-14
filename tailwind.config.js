@@ -9,28 +9,6 @@ module.exports = {
     extend: {
       
       keyframes: {
-        typewriter: {
-          to: {
-            left: '100%',
-          },
-        },
-        blink: {
-          '0%': {
-            opacity: '0',
-          },
-          '0.1%': {
-            opacity: '1',
-          },
-          '50%': {
-            opacity: '1',
-          },
-          '50.1%': {
-            opacity: '0',
-          },
-          '100%': {
-            opacity: '0',
-          },
-        },
       },
 
       screens: {
