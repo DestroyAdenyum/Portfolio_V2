@@ -19,7 +19,12 @@ function ProjectComponent({
       }
 
     return (
-        <article className="overflow-hidden bg-gray-200 text-center flex flex-col rounded-xl shadow-lg border-2 border-slate-900">
+        <article 
+            className="overflow-hidden bg-gray-200 text-center flex flex-col rounded-xl shadow-lg border-2 border-slate-900"
+            // data-te-animation-init
+            // data-te-animation-start="onScroll"
+            // data-te-animation="[fade-in_1s_ease-in-out]"
+        >
             <div className="w-full h-64">
                 <img className="w-full h-64 object-cover" src={picture} alt={title} />
             </div>
