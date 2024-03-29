@@ -47,6 +47,12 @@
         "name": "Git",
         "icon": "https://img.icons8.com/color/80/git.png",
         "alt": "Icon Git"
+      },
+      {
+        "id": 9,
+        "name": "TailwindCSS",
+        "icon": "https://img.icons8.com/color/80/tailwind_css.png",
+        "alt": "Icon Tailwind CSS"
       }
     ]
 }

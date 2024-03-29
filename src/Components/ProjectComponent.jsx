@@ -28,7 +28,7 @@ function ProjectComponent({
             <div className="w-full h-64">
                 <img className="w-full h-64 object-cover" src={picture} alt={title} />
             </div>
-            <div className="flex flex-col gap-4 h-full py-4 px-4 border-t-2">
+            <div className="flex flex-col justify-center gap-4 h-full py-4 px-4 border-t-2 space-y-4">
                 <div className="flex flex-col gap-4 pl-4 pr-4">
                     <h4 className="text-slate-800 font-protest text-2xl">{title}</h4>
                     <div className="text-slate-800">{description}</div>

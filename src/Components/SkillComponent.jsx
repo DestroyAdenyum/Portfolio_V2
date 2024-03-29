@@ -1,5 +1,4 @@
 import React from "react";
-
 import DataSkills from "../Data/DataSkills.json";
 
 function SkillComponent() {

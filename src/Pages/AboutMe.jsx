@@ -4,8 +4,8 @@ import Photo from "../Assets/Photo/01nb_paper.webp";
 
 function AboutMe() {
     return (
-        <section className="container m-auto pt-8 flex flex-col items-center pb-10">
-            <h1 className="text-3xl text-center font-protest text-white">Marie-Charlotte LEVITRE</h1>
+        <section className="container m-auto pt-16 flex flex-col items-center pb-14">
+            <h1 className="text-6xl text-center font-protest text-white">Marie-Charlotte LEVITRE</h1>
             <h2 className="text-2xl text-center font-handlee text-white">Développeuse front-end intégratrice React</h2>
             <div className="h-fit">
                 <img src={ Photo } alt="Marie-Charlotte" className="w-full h-full object-cover" />

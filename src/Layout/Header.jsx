@@ -14,7 +14,7 @@ function Header() {
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
 
         <div className="flex lg:flex-1">
-          <a href='#accueil' className="text-2xl font-protest text-white">Portfolio</a>
+          <a href='#accueil' className="text-3xl font-protest text-white">Portfolio</a>
         </div>
 
         <div className="flex lg:hidden">
@@ -31,25 +31,25 @@ function Header() {
         <div className="hidden lg:flex lg:gap-x-10">
             <a 
               href="#aboutme" 
-              className="block rounded-lg px-3 py-2 text-base font-protest text-white hover:bg-slate-700"
+              className="block rounded-lg px-3 py-2 text-xl font-protest text-white hover:bg-slate-700"
             >
                 A propos
             </a>
             <a 
               href="#skills" 
-              className="block rounded-lg px-3 py-2 text-base font-protest text-white hover:bg-slate-700"
+              className="block rounded-lg px-3 py-2 text-xl font-protest text-white hover:bg-slate-700"
             >
                 Skills
             </a>
             <a 
               href="#projects" 
-              className="block rounded-lg px-3 py-2 text-base font-protest text-white hover:bg-slate-700"
+              className="block rounded-lg px-3 py-2 text-xl font-protest text-white hover:bg-slate-700"
             >
                 Projets
             </a>
             <a
               href="#contact" 
-              className="block rounded-lg px-3 py-2 text-base font-protest text-white hover:bg-slate-700"
+              className="block rounded-lg px-3 py-2 text-xl font-protest text-white hover:bg-slate-700"
             >
                 Contact
             </a>
